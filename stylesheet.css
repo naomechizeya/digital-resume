@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #f4f4f4;
+    color: #555555
+    
+
+}
+h1{
+    
+    color: #555555;
+}
+h2{
+    color: black;
+}
+.box-1{
+    
+    color: black;
+    border: 5px rgb(36, 36, 36) solid;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('../image/background2.png');
+    background-position: center right;
+
+}
+.box-2{
+    background-color: rgb(95, 232, 242);
+    color: rgb(8, 8, 8);
+    border: 5px rgb(36, 36, 36) solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-3{
+    background-color: rgb(95, 232, 242);
+    color: rgb(8, 8, 8);
+    border: 5px rgb(36, 36, 36) solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-4{
+    background-color: rgb(95, 232, 242);
+    color: rgb(8, 8, 8);
+    border: 5px rgb(36, 36, 36) solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-5{
+    background-color: rgb(95, 232, 242);
+    color: rgb(8, 8, 8);
+    border: 5px rgb(36, 36, 36) solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.box-6{
+    background-color: rgb(210, 200, 200);
+    color: black;
+    border: 5px rgb(36, 36, 36) solid;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img.rounded-corners{
+    border-radius: 50% 50% 50% 50%;
+}
+
+@media only screen and (max-width:425px)
+{
+ h1{
+     font-size: 1.2em;
+   }
+  h2{
+     font-size: 1.6em;
+  }
+  p{
+     font-size: 0.7;
+  }
+}
+@media screen and (min-width: 700px)
+{
+    .box-2{
+        display: flex;
+    } 
+    .box-3{
+        flex: 1;
+    }
+    .box-4{
+        flex: 2;
+    }
+}
+@media screen and(min-width:1140) 
+{
+    .Container{
+        background-color: #f4f4f4;
+        border: 2px solid black;
+        width: 75vw;
+        height: 50vh;
+        display: grid;
+        gap: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .box-2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        flex-grow: 2;
+    }
+    .box-3{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        flex-grow: 2;
+    }
+    .box-4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4; 
+        flex-grow: 2;
+    }
+}
+
+    
